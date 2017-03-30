@@ -26,13 +26,16 @@ You can find a full list of `event`-related methods in [jQuery's event documenta
 Fork this repository to your GitHub account, then clone your GitHub copy onto your computer.
 
 * Each event has its own directory with HTML, CSS, and JavaScript files.  Start each event page by opening its HTML file in your browser.  
-* Read the descriptions below (and the existing HTML and JavaScript) for each event page. To meet the goals, you'll need to change each `base.js` file. Do not change the HTML files.  
+* Read the descriptions below (and the existing HTML and JavaScript) for each event page. To meet the goals, you'll need to change each JavaScript file. Do not change the HTML files.  
 * Make sure to keep your developer console open so that you can check for bugs!  
 * Make at least one git commit for each page.  
 
+
+
 ### `ready`
 
-**Get the page to say "Go!" without touching the html.**
+
+**Get the page to say "Go!" instead of "Ready?" without changing the HTML.**
 
 <img width="450" alt="ready screenshot" src="https://cloud.githubusercontent.com/assets/3254910/17784989/b54a1bdc-6533-11e6-8ca6-abf9a892ff74.png">
 
@@ -43,14 +46,20 @@ Fork this repository to your GitHub account, then clone your GitHub copy onto yo
 
 **Stop the forms from submitting.**
 
-<img width="450" alt="submit" src="https://cloud.githubusercontent.com/assets/3254910/17784969/a63343c6-6533-11e6-977e-b3ac4779fe2c.png">
+<img width="450" alt="submit" src="https://cloud.githubusercontent.com/assets/3254910/24517308/a01ca2f2-1532-11e7-8d7a-571b5c1d3c44.png">
 
 
-+ That's weird. Why does one button reload the same page and the other redirect to youtube?  
+Try clicking both buttons.  
 
-+ Hmm... What is the "?" doing in the URL? How did it get there? Try removing it.  
++ Submitting the "Reload" form currently reloads the page (you can see the "last reload time" change). It also adds a "?" to the URL.
 
-Stretch: Instead of just stopping the forms, make it so that clicking the submit buttons adds an embedded youtube video to the page.
++ The "Fun" form currently redirects to a youtube video.
+
+
+Hint: Make sure you don't just handle a click for the buttons, because pressing enter/return from the text input boxes also submits the form!
+
+
+Stretch: Instead of just stopping the forms, make it so that submitting them adds an embedded youtube video to the page.
 
 
 <hr>
@@ -96,7 +105,7 @@ The next time they hit the spacebar again, record their new "end" time.
 
 Then, calculate the time difference, and display it on the page.
 
-Stretch: update the display to show the time while the clock is running. 
+Stretch: update the display to show the time while the clock is running.
 
 
 
